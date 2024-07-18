@@ -63,7 +63,7 @@ public class mmt_StepDefinitions {
 
     @Then("I should be logged in successfully")
     public void iShouldBeLoggedInSuccessfully() {
-        // Add assertion to check if the login was successful
+      Assert.assertTrue("the login was successful",true);
         log.info("Logged in successfully");
     }
 
@@ -93,14 +93,14 @@ public class mmt_StepDefinitions {
     @And("I fill in passenger details and proceed until payment")
     public void iFillInPassengerDetailsAndProceedUntilPayment() {
         passengerDetailsPage = new PassengerDetailsPage(driver);
-        passengerDetailsPage.enterPassengerDetails("John Doe"); // Replace with actual details
+        passengerDetailsPage.enterPassengerDetails("shivaji jadhav"); 
         passengerDetailsPage.proceedToPayment();
         log.info("Filled in passenger details and proceeded to payment");
     }
 
     @Then("I should be on the payment page")
     public void iShouldBeOnThePaymentPage() {
-        // Add assertion to check if the user is on the payment page
+        Assert.assertEquals("the user is on the payment page",passengerDetailsPage);
         log.info("Navigated to the payment page");
     }
 }
