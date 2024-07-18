@@ -7,13 +7,13 @@ import utils_files.BasePage;
 
 public class LoginPage extends BasePage {
 
-    @FindBy(id = "username") // Replace with actual ID
+    @FindBy(id = "username") 
     private WebElement usernameField;
 
-    @FindBy(id = "password") // Replace with actual ID
+    @FindBy(id = "password") 
     private WebElement passwordField;
 
-    @FindBy(id = "login_button") // Replace with actual ID
+    @FindBy(id = "login_button") 
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
