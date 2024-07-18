@@ -7,10 +7,10 @@ import utils_files.BasePage;
 
 public class PassengerDetailsPage extends BasePage {
 
-    @FindBy(id = "passengerName") // Replace with actual ID
+    @FindBy(id = "passengerName") 
     private WebElement passengerNameField;
 
-    @FindBy(id = "proceedToPaymentButton") // Replace with actual ID
+    @FindBy(id = "proceedToPaymentButton") 
     private WebElement proceedToPaymentButton;
 
     public PassengerDetailsPage(WebDriver driver) {
