@@ -7,22 +7,22 @@ import utils_files.BasePage;
 
 public class FlightSearchPage extends BasePage {
 
-    @FindBy(id = "roundTrip") // Replace with actual ID
+    @FindBy(id = "roundTrip") 
     private WebElement roundTripOption;
 
-    @FindBy(id = "fromCity") // Replace with actual ID
+    @FindBy(id = "fromCity") 
     private WebElement departureCityField;
 
-    @FindBy(id = "toCity") // Replace with actual ID
+    @FindBy(id = "toCity") 
     private WebElement destinationCityField;
 
-    @FindBy(id = "departure") // Replace with actual ID
+    @FindBy(id = "departure") 
     private WebElement departureDateField;
 
-    @FindBy(id = "return") // Replace with actual ID
+    @FindBy(id = "return") 
     private WebElement returnDateField;
 
-    @FindBy(xpath = "//a[contains(text(),'Search')]") // Replace with actual XPATH
+    @FindBy(xpath = "//a[contains(text(),'Search')]") 
     private WebElement searchButton;
 
     public FlightSearchPage(WebDriver driver) {
