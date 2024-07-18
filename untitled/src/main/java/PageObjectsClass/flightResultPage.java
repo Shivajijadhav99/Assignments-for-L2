@@ -9,7 +9,7 @@ public class flightResultPage extends BasePage {
 
     private WebDriver driver;
 
-    @FindBy(xpath ="(//div[@class='flight-option'])[4]") private WebElement fourthFlightOption; // Replace with actual XPATH
+    @FindBy(xpath ="(//div[@class='flight-option'])[4]") private WebElement fourthFlightOption; 
 
     public flightResultPage(WebDriver driver)
     {
