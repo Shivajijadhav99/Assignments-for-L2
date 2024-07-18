@@ -7,7 +7,7 @@ import utils_files.BasePage;
 
 public class FlightSelectionPage extends BasePage {
 
-    @FindBy(xpath = "(//div[@class='fli-list one-way'])[4]") // Replace with actual XPATH
+    @FindBy(xpath = "(//div[@class='fli-list one-way'])[4]") 
     private WebElement fourthFlight;
 
     public FlightSelectionPage(WebDriver driver) {
